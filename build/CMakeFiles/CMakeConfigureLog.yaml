@@ -1,0 +1,365 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/baker/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/CMakeDetermineSystem.cmake:200 (message)"
+      - "CMakeLists.txt:24 (project)"
+    message: |
+      The target system is: Generic -  - mipsel
+      The host system is: Linux - 5.15.0-107-generic - x86_64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/baker/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/home/baker/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/home/baker/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:24 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /bin/mipsel-linux-gnu-gcc 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is GNU, found in:
+        /home/baker/Code/PSX/Projects/build/CMakeFiles/3.29.2/CompilerIdC/a.out
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/baker/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/home/baker/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/home/baker/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:24 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /bin/mipsel-linux-gnu-g++ 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is GNU, found in:
+        /home/baker/Code/PSX/Projects/build/CMakeFiles/3.29.2/CompilerIdCXX/a.out
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/baker/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:1165 (message)"
+      - "/home/baker/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:24 (project)"
+    message: |
+      Checking whether the ASM compiler is GNU using "--version" matched "(GNU assembler)|(GCC)|(Free Software Foundation)":
+      mipsel-linux-gnu-gcc (Ubuntu 10.3.0-1ubuntu1) 10.3.0
+      Copyright (C) 2020 Free Software Foundation, Inc.
+      This is free software; see the source for copying conditions.  There is NO
+      warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/baker/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake:64 (try_compile)"
+      - "/home/baker/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:24 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/home/baker/Code/PSX/Projects/build/CMakeFiles/CMakeScratch/TryCompile-zViAyP"
+      binary: "/home/baker/Code/PSX/Projects/build/CMakeFiles/CMakeScratch/TryCompile-zViAyP"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      TOOLCHAIN_PATH: "/bin"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/baker/Code/PSX/Projects/build/CMakeFiles/CMakeScratch/TryCompile-zViAyP'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_3e848
+        [1/2] /bin/mipsel-linux-gnu-gcc   -v -g -Wall -Wa,--strip-local-absolute -ffreestanding -fno-builtin -fno-pic -nostdlib -fdata-sections -ffunction-sections -fsigned-char -fno-strict-overflow -march=r3000 -mabi=32 -mfp32 -mno-mt -mno-llsc -mno-abicalls -mgpopt -mno-extern-sdata -G8 -mno-check-zero-division -o CMakeFiles/cmTC_3e848.dir/CMakeCCompilerABI.c.obj -c /home/baker/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/CMakeCCompilerABI.c
+        Using built-in specs.
+        COLLECT_AS_OPTIONS='--strip-local-absolute'
+        COLLECT_GCC=/bin/mipsel-linux-gnu-gcc
+        Target: mipsel-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 10.3.0-1ubuntu1' --with-bugurl=file:///usr/share/doc/gcc-10/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-10 --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-libitm --disable-libsanitizer --disable-libquadmath --disable-libquadmath-support --enable-plugin --with-system-zlib --enable-libphobos-checking=release --without-target-system-zlib --enable-multiarch --disable-werror --enable-multilib --with-arch-32=mips32r2 --with-fp-32=xx --with-madd4=no --with-lxc1-sxc1=no --enable-targets=all --with-arch-64=mips64r2 --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=mipsel-linux-gnu --program-prefix=mipsel-linux-gnu- --includedir=/usr/mipsel-linux-gnu/include --with-build-config=bootstrap-lto-lean --enable-link-mutex
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 10.3.0 (Ubuntu 10.3.0-1ubuntu1) 
+        COLLECT_GCC_OPTIONS='-v' '-g' '-Wall' '-ffreestanding' '-fno-builtin' '-fno-pic' '-nostdlib' '-fdata-sections' '-ffunction-sections' '-fsigned-char' '-fno-strict-overflow' '-march=r3000' '-mabi=32' '-mfp32' '-mno-mt' '-mno-llsc' '-mno-abicalls' '-mgpopt' '-mno-extern-sdata' '-G' '8' '-mno-check-zero-division' '-o' 'CMakeFiles/cmTC_3e848.dir/CMakeCCompilerABI.c.obj' '-c' '-mno-lxc1-sxc1' '-mno-madd4' '-mips1' '-mno-shared' '-EL'
+         /usr/lib/gcc-cross/mipsel-linux-gnu/10/cc1 -quiet -v -imultiarch mipsel-linux-gnu /home/baker/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/CMakeCCompilerABI.c -G 8 -mel -quiet -dumpbase CMakeCCompilerABI.c -march=r3000 -mabi=32 -mfp32 -mno-mt -mno-llsc -mno-abicalls -mgpopt -mno-extern-sdata -mno-check-zero-division -mno-lxc1-sxc1 -mno-madd4 -mips1 -mno-shared -auxbase-strip CMakeFiles/cmTC_3e848.dir/CMakeCCompilerABI.c.obj -g -Wall -version -ffreestanding -fno-builtin -fno-pic -fdata-sections -ffunction-sections -fsigned-char -fno-strict-overflow -Wformat-security -o /tmp/cctaHSF4.s
+        GNU C17 (Ubuntu 10.3.0-1ubuntu1) version 10.3.0 (mipsel-linux-gnu)
+        	compiled by GNU C version 10.3.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.0, isl version isl-0.24-GMP
+        
+        warning: MPC header version 1.2.0 differs from library version 1.2.1.
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/usr/local/include/mipsel-linux-gnu"
+        ignoring nonexistent directory "/usr/lib/gcc-cross/mipsel-linux-gnu/10/include-fixed"
+        ignoring nonexistent directory "/usr/include/mipsel-linux-gnu"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/lib/gcc-cross/mipsel-linux-gnu/10/include
+         /usr/lib/gcc-cross/mipsel-linux-gnu/10/../../../../mipsel-linux-gnu/include
+         /usr/include
+        End of search list.
+        GNU C17 (Ubuntu 10.3.0-1ubuntu1) version 10.3.0 (mipsel-linux-gnu)
+        	compiled by GNU C version 10.3.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.0, isl version isl-0.24-GMP
+        
+        warning: MPC header version 1.2.0 differs from library version 1.2.1.
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        Compiler executable checksum: 672e18f5327766e503c710f192600d26
+        COLLECT_GCC_OPTIONS='-v' '-g' '-Wall' '-ffreestanding' '-fno-builtin' '-fno-pic' '-nostdlib' '-fdata-sections' '-ffunction-sections' '-fsigned-char' '-fno-strict-overflow' '-march=r3000' '-mabi=32' '-mfp32' '-mno-mt' '-mno-llsc' '-mno-abicalls' '-mgpopt' '-mno-extern-sdata' '-G' '8' '-mno-check-zero-division' '-o' 'CMakeFiles/cmTC_3e848.dir/CMakeCCompilerABI.c.obj' '-c' '-mno-lxc1-sxc1' '-mno-madd4' '-mips1' '-mno-shared' '-EL'
+         /usr/lib/gcc-cross/mipsel-linux-gnu/10/../../../../mipsel-linux-gnu/bin/as -v -G 8 -EL -mips1 -mno-mt -O1 -g -mabi=32 -march=r3000 -mfp32 -mno-shared --strip-local-absolute -o CMakeFiles/cmTC_3e848.dir/CMakeCCompilerABI.c.obj /tmp/cctaHSF4.s
+        GNU assembler version 2.38 (mipsel-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.38
+        COMPILER_PATH=/usr/lib/gcc-cross/mipsel-linux-gnu/10/:/usr/lib/gcc-cross/mipsel-linux-gnu/10/:/usr/lib/gcc-cross/mipsel-linux-gnu/:/usr/lib/gcc-cross/mipsel-linux-gnu/10/:/usr/lib/gcc-cross/mipsel-linux-gnu/:/usr/lib/gcc-cross/mipsel-linux-gnu/10/../../../../mipsel-linux-gnu/bin/
+        LIBRARY_PATH=/usr/lib/gcc-cross/mipsel-linux-gnu/10/:/usr/lib/gcc-cross/mipsel-linux-gnu/10/../../../../mipsel-linux-gnu/lib/../lib/:/lib/mipsel-linux-gnu/:/lib/../lib/:/usr/lib/mipsel-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc-cross/mipsel-linux-gnu/10/../../../../mipsel-linux-gnu/lib/:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-g' '-Wall' '-ffreestanding' '-fno-builtin' '-fno-pic' '-nostdlib' '-fdata-sections' '-ffunction-sections' '-fsigned-char' '-fno-strict-overflow' '-march=r3000' '-mabi=32' '-mfp32' '-mno-mt' '-mno-llsc' '-mno-abicalls' '-mgpopt' '-mno-extern-sdata' '-G' '8' '-mno-check-zero-division' '-o' 'CMakeFiles/cmTC_3e848.dir/CMakeCCompilerABI.c.obj' '-c' '-mno-lxc1-sxc1' '-mno-madd4' '-mips1' '-mno-shared' '-EL'
+        [2/2] : && /home/baker/.local/lib/python3.10/site-packages/cmake/data/bin/cmake -E rm -f libcmTC_3e848.a && /bin/mipsel-linux-gnu-ar qc libcmTC_3e848.a  CMakeFiles/cmTC_3e848.dir/CMakeCCompilerABI.c.obj && /bin/mipsel-linux-gnu-ranlib libcmTC_3e848.a && :
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/baker/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake:134 (message)"
+      - "/home/baker/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:24 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/lib/gcc-cross/mipsel-linux-gnu/10/include]
+          add: [/usr/lib/gcc-cross/mipsel-linux-gnu/10/../../../../mipsel-linux-gnu/include]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/lib/gcc-cross/mipsel-linux-gnu/10/include] ==> [/usr/lib/gcc-cross/mipsel-linux-gnu/10/include]
+        collapse include dir [/usr/lib/gcc-cross/mipsel-linux-gnu/10/../../../../mipsel-linux-gnu/include] ==> [/usr/mipsel-linux-gnu/include]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/lib/gcc-cross/mipsel-linux-gnu/10/include;/usr/mipsel-linux-gnu/include;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/baker/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake:170 (message)"
+      - "/home/baker/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:24 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
+        ignore line: [Change Dir: '/home/baker/Code/PSX/Projects/build/CMakeFiles/CMakeScratch/TryCompile-zViAyP']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/ninja -v cmTC_3e848]
+        ignore line: [[1/2] /bin/mipsel-linux-gnu-gcc   -v -g -Wall -Wa --strip-local-absolute -ffreestanding -fno-builtin -fno-pic -nostdlib -fdata-sections -ffunction-sections -fsigned-char -fno-strict-overflow -march=r3000 -mabi=32 -mfp32 -mno-mt -mno-llsc -mno-abicalls -mgpopt -mno-extern-sdata -G8 -mno-check-zero-division -o CMakeFiles/cmTC_3e848.dir/CMakeCCompilerABI.c.obj -c /home/baker/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/CMakeCCompilerABI.c]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_AS_OPTIONS='--strip-local-absolute']
+        ignore line: [COLLECT_GCC=/bin/mipsel-linux-gnu-gcc]
+        ignore line: [Target: mipsel-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 10.3.0-1ubuntu1' --with-bugurl=file:///usr/share/doc/gcc-10/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-10 --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-libitm --disable-libsanitizer --disable-libquadmath --disable-libquadmath-support --enable-plugin --with-system-zlib --enable-libphobos-checking=release --without-target-system-zlib --enable-multiarch --disable-werror --enable-multilib --with-arch-32=mips32r2 --with-fp-32=xx --with-madd4=no --with-lxc1-sxc1=no --enable-targets=all --with-arch-64=mips64r2 --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=mipsel-linux-gnu --program-prefix=mipsel-linux-gnu- --includedir=/usr/mipsel-linux-gnu/include --with-build-config=bootstrap-lto-lean --enable-link-mutex]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 10.3.0 (Ubuntu 10.3.0-1ubuntu1) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-g' '-Wall' '-ffreestanding' '-fno-builtin' '-fno-pic' '-nostdlib' '-fdata-sections' '-ffunction-sections' '-fsigned-char' '-fno-strict-overflow' '-march=r3000' '-mabi=32' '-mfp32' '-mno-mt' '-mno-llsc' '-mno-abicalls' '-mgpopt' '-mno-extern-sdata' '-G' '8' '-mno-check-zero-division' '-o' 'CMakeFiles/cmTC_3e848.dir/CMakeCCompilerABI.c.obj' '-c' '-mno-lxc1-sxc1' '-mno-madd4' '-mips1' '-mno-shared' '-EL']
+        ignore line: [ /usr/lib/gcc-cross/mipsel-linux-gnu/10/cc1 -quiet -v -imultiarch mipsel-linux-gnu /home/baker/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/CMakeCCompilerABI.c -G 8 -mel -quiet -dumpbase CMakeCCompilerABI.c -march=r3000 -mabi=32 -mfp32 -mno-mt -mno-llsc -mno-abicalls -mgpopt -mno-extern-sdata -mno-check-zero-division -mno-lxc1-sxc1 -mno-madd4 -mips1 -mno-shared -auxbase-strip CMakeFiles/cmTC_3e848.dir/CMakeCCompilerABI.c.obj -g -Wall -version -ffreestanding -fno-builtin -fno-pic -fdata-sections -ffunction-sections -fsigned-char -fno-strict-overflow -Wformat-security -o /tmp/cctaHSF4.s]
+        ignore line: [GNU C17 (Ubuntu 10.3.0-1ubuntu1) version 10.3.0 (mipsel-linux-gnu)]
+        ignore line: [	compiled by GNU C version 10.3.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.0  isl version isl-0.24-GMP]
+        ignore line: []
+        ignore line: [warning: MPC header version 1.2.0 differs from library version 1.2.1.]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/usr/local/include/mipsel-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc-cross/mipsel-linux-gnu/10/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/usr/include/mipsel-linux-gnu"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/lib/gcc-cross/mipsel-linux-gnu/10/include]
+        ignore line: [ /usr/lib/gcc-cross/mipsel-linux-gnu/10/../../../../mipsel-linux-gnu/include]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [GNU C17 (Ubuntu 10.3.0-1ubuntu1) version 10.3.0 (mipsel-linux-gnu)]
+        ignore line: [	compiled by GNU C version 10.3.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.0  isl version isl-0.24-GMP]
+        ignore line: []
+        ignore line: [warning: MPC header version 1.2.0 differs from library version 1.2.1.]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [Compiler executable checksum: 672e18f5327766e503c710f192600d26]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-g' '-Wall' '-ffreestanding' '-fno-builtin' '-fno-pic' '-nostdlib' '-fdata-sections' '-ffunction-sections' '-fsigned-char' '-fno-strict-overflow' '-march=r3000' '-mabi=32' '-mfp32' '-mno-mt' '-mno-llsc' '-mno-abicalls' '-mgpopt' '-mno-extern-sdata' '-G' '8' '-mno-check-zero-division' '-o' 'CMakeFiles/cmTC_3e848.dir/CMakeCCompilerABI.c.obj' '-c' '-mno-lxc1-sxc1' '-mno-madd4' '-mips1' '-mno-shared' '-EL']
+        ignore line: [ /usr/lib/gcc-cross/mipsel-linux-gnu/10/../../../../mipsel-linux-gnu/bin/as -v -G 8 -EL -mips1 -mno-mt -O1 -g -mabi=32 -march=r3000 -mfp32 -mno-shared --strip-local-absolute -o CMakeFiles/cmTC_3e848.dir/CMakeCCompilerABI.c.obj /tmp/cctaHSF4.s]
+        ignore line: [GNU assembler version 2.38 (mipsel-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.38]
+        ignore line: [COMPILER_PATH=/usr/lib/gcc-cross/mipsel-linux-gnu/10/:/usr/lib/gcc-cross/mipsel-linux-gnu/10/:/usr/lib/gcc-cross/mipsel-linux-gnu/:/usr/lib/gcc-cross/mipsel-linux-gnu/10/:/usr/lib/gcc-cross/mipsel-linux-gnu/:/usr/lib/gcc-cross/mipsel-linux-gnu/10/../../../../mipsel-linux-gnu/bin/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc-cross/mipsel-linux-gnu/10/:/usr/lib/gcc-cross/mipsel-linux-gnu/10/../../../../mipsel-linux-gnu/lib/../lib/:/lib/mipsel-linux-gnu/:/lib/../lib/:/usr/lib/mipsel-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc-cross/mipsel-linux-gnu/10/../../../../mipsel-linux-gnu/lib/:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-g' '-Wall' '-ffreestanding' '-fno-builtin' '-fno-pic' '-nostdlib' '-fdata-sections' '-ffunction-sections' '-fsigned-char' '-fno-strict-overflow' '-march=r3000' '-mabi=32' '-mfp32' '-mno-mt' '-mno-llsc' '-mno-abicalls' '-mgpopt' '-mno-extern-sdata' '-G' '8' '-mno-check-zero-division' '-o' 'CMakeFiles/cmTC_3e848.dir/CMakeCCompilerABI.c.obj' '-c' '-mno-lxc1-sxc1' '-mno-madd4' '-mips1' '-mno-shared' '-EL']
+        ignore line: [[2/2] : && /home/baker/.local/lib/python3.10/site-packages/cmake/data/bin/cmake -E rm -f libcmTC_3e848.a && /bin/mipsel-linux-gnu-ar qc libcmTC_3e848.a  CMakeFiles/cmTC_3e848.dir/CMakeCCompilerABI.c.obj && /bin/mipsel-linux-gnu-ranlib libcmTC_3e848.a && :]
+        ignore line: []
+        ignore line: []
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/baker/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake:64 (try_compile)"
+      - "/home/baker/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:24 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/home/baker/Code/PSX/Projects/build/CMakeFiles/CMakeScratch/TryCompile-c25cxw"
+      binary: "/home/baker/Code/PSX/Projects/build/CMakeFiles/CMakeScratch/TryCompile-c25cxw"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      TOOLCHAIN_PATH: "/bin"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/baker/Code/PSX/Projects/build/CMakeFiles/CMakeScratch/TryCompile-c25cxw'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_1c199
+        [1/2] /bin/mipsel-linux-gnu-g++   -v -g -Wall -Wa,--strip-local-absolute -ffreestanding -fno-builtin -fno-pic -nostdlib -fdata-sections -ffunction-sections -fsigned-char -fno-strict-overflow -march=r3000 -mabi=32 -mfp32 -mno-mt -mno-llsc -mno-abicalls -mgpopt -mno-extern-sdata -G8 -fno-exceptions -fno-rtti -fno-unwind-tables -fno-threadsafe-statics -fno-use-cxa-atexit -mno-check-zero-division -o CMakeFiles/cmTC_1c199.dir/CMakeCXXCompilerABI.cpp.obj -c /home/baker/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/CMakeCXXCompilerABI.cpp
+        Using built-in specs.
+        COLLECT_AS_OPTIONS='--strip-local-absolute'
+        COLLECT_GCC=/bin/mipsel-linux-gnu-g++
+        Target: mipsel-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 10.3.0-1ubuntu1' --with-bugurl=file:///usr/share/doc/gcc-10/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-10 --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-libitm --disable-libsanitizer --disable-libquadmath --disable-libquadmath-support --enable-plugin --with-system-zlib --enable-libphobos-checking=release --without-target-system-zlib --enable-multiarch --disable-werror --enable-multilib --with-arch-32=mips32r2 --with-fp-32=xx --with-madd4=no --with-lxc1-sxc1=no --enable-targets=all --with-arch-64=mips64r2 --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=mipsel-linux-gnu --program-prefix=mipsel-linux-gnu- --includedir=/usr/mipsel-linux-gnu/include --with-build-config=bootstrap-lto-lean --enable-link-mutex
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 10.3.0 (Ubuntu 10.3.0-1ubuntu1) 
+        COLLECT_GCC_OPTIONS='-v' '-g' '-Wall' '-ffreestanding' '-fno-builtin' '-fno-pic' '-nostdlib' '-fdata-sections' '-ffunction-sections' '-fsigned-char' '-fno-strict-overflow' '-march=r3000' '-mabi=32' '-mfp32' '-mno-mt' '-mno-llsc' '-mno-abicalls' '-mgpopt' '-mno-extern-sdata' '-G' '8' '-fno-exceptions' '-fno-rtti' '-fno-unwind-tables' '-fno-threadsafe-statics' '-fno-use-cxa-atexit' '-mno-check-zero-division' '-o' 'CMakeFiles/cmTC_1c199.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mno-lxc1-sxc1' '-mno-madd4' '-mips1' '-mno-shared' '-EL'
+         /usr/lib/gcc-cross/mipsel-linux-gnu/10/cc1plus -quiet -v -imultiarch mipsel-linux-gnu -D_GNU_SOURCE /home/baker/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/CMakeCXXCompilerABI.cpp -G 8 -mel -quiet -dumpbase CMakeCXXCompilerABI.cpp -march=r3000 -mabi=32 -mfp32 -mno-mt -mno-llsc -mno-abicalls -mgpopt -mno-extern-sdata -mno-check-zero-division -mno-lxc1-sxc1 -mno-madd4 -mips1 -mno-shared -auxbase-strip CMakeFiles/cmTC_1c199.dir/CMakeCXXCompilerABI.cpp.obj -g -Wall -version -ffreestanding -fno-builtin -fno-pic -fdata-sections -ffunction-sections -fsigned-char -fno-strict-overflow -fno-exceptions -fno-rtti -fno-unwind-tables -fno-threadsafe-statics -fno-use-cxa-atexit -Wformat-security -o /tmp/cchALriQ.s
+        GNU C++14 (Ubuntu 10.3.0-1ubuntu1) version 10.3.0 (mipsel-linux-gnu)
+        	compiled by GNU C version 10.3.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.0, isl version isl-0.24-GMP
+        
+        warning: MPC header version 1.2.0 differs from library version 1.2.1.
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/usr/local/include/mipsel-linux-gnu"
+        ignoring nonexistent directory "/usr/lib/gcc-cross/mipsel-linux-gnu/10/include-fixed"
+        ignoring nonexistent directory "/usr/include/mipsel-linux-gnu"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/lib/gcc-cross/mipsel-linux-gnu/10/../../../../mipsel-linux-gnu/include/c++/10
+         /usr/lib/gcc-cross/mipsel-linux-gnu/10/../../../../mipsel-linux-gnu/include/c++/10/mipsel-linux-gnu
+         /usr/lib/gcc-cross/mipsel-linux-gnu/10/../../../../mipsel-linux-gnu/include/c++/10/backward
+         /usr/lib/gcc-cross/mipsel-linux-gnu/10/include
+         /usr/lib/gcc-cross/mipsel-linux-gnu/10/../../../../mipsel-linux-gnu/include
+         /usr/include
+        End of search list.
+        GNU C++14 (Ubuntu 10.3.0-1ubuntu1) version 10.3.0 (mipsel-linux-gnu)
+        	compiled by GNU C version 10.3.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.0, isl version isl-0.24-GMP
+        
+        warning: MPC header version 1.2.0 differs from library version 1.2.1.
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        Compiler executable checksum: 88ddce81f0e621d7f1c38a038151f445
+        COLLECT_GCC_OPTIONS='-v' '-g' '-Wall' '-ffreestanding' '-fno-builtin' '-fno-pic' '-nostdlib' '-fdata-sections' '-ffunction-sections' '-fsigned-char' '-fno-strict-overflow' '-march=r3000' '-mabi=32' '-mfp32' '-mno-mt' '-mno-llsc' '-mno-abicalls' '-mgpopt' '-mno-extern-sdata' '-G' '8' '-fno-exceptions' '-fno-rtti' '-fno-unwind-tables' '-fno-threadsafe-statics' '-fno-use-cxa-atexit' '-mno-check-zero-division' '-o' 'CMakeFiles/cmTC_1c199.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mno-lxc1-sxc1' '-mno-madd4' '-mips1' '-mno-shared' '-EL'
+         /usr/lib/gcc-cross/mipsel-linux-gnu/10/../../../../mipsel-linux-gnu/bin/as -v -G 8 -EL -mips1 -mno-mt -O1 -g -mabi=32 -march=r3000 -mfp32 -mno-shared --strip-local-absolute -o CMakeFiles/cmTC_1c199.dir/CMakeCXXCompilerABI.cpp.obj /tmp/cchALriQ.s
+        GNU assembler version 2.38 (mipsel-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.38
+        COMPILER_PATH=/usr/lib/gcc-cross/mipsel-linux-gnu/10/:/usr/lib/gcc-cross/mipsel-linux-gnu/10/:/usr/lib/gcc-cross/mipsel-linux-gnu/:/usr/lib/gcc-cross/mipsel-linux-gnu/10/:/usr/lib/gcc-cross/mipsel-linux-gnu/:/usr/lib/gcc-cross/mipsel-linux-gnu/10/../../../../mipsel-linux-gnu/bin/
+        LIBRARY_PATH=/usr/lib/gcc-cross/mipsel-linux-gnu/10/:/usr/lib/gcc-cross/mipsel-linux-gnu/10/../../../../mipsel-linux-gnu/lib/../lib/:/lib/mipsel-linux-gnu/:/lib/../lib/:/usr/lib/mipsel-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc-cross/mipsel-linux-gnu/10/../../../../mipsel-linux-gnu/lib/:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-g' '-Wall' '-ffreestanding' '-fno-builtin' '-fno-pic' '-nostdlib' '-fdata-sections' '-ffunction-sections' '-fsigned-char' '-fno-strict-overflow' '-march=r3000' '-mabi=32' '-mfp32' '-mno-mt' '-mno-llsc' '-mno-abicalls' '-mgpopt' '-mno-extern-sdata' '-G' '8' '-fno-exceptions' '-fno-rtti' '-fno-unwind-tables' '-fno-threadsafe-statics' '-fno-use-cxa-atexit' '-mno-check-zero-division' '-o' 'CMakeFiles/cmTC_1c199.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mno-lxc1-sxc1' '-mno-madd4' '-mips1' '-mno-shared' '-EL'
+        [2/2] : && /home/baker/.local/lib/python3.10/site-packages/cmake/data/bin/cmake -E rm -f libcmTC_1c199.a && /bin/mipsel-linux-gnu-ar qc libcmTC_1c199.a  CMakeFiles/cmTC_1c199.dir/CMakeCXXCompilerABI.cpp.obj && /bin/mipsel-linux-gnu-ranlib libcmTC_1c199.a && :
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/baker/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake:134 (message)"
+      - "/home/baker/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:24 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/lib/gcc-cross/mipsel-linux-gnu/10/../../../../mipsel-linux-gnu/include/c++/10]
+          add: [/usr/lib/gcc-cross/mipsel-linux-gnu/10/../../../../mipsel-linux-gnu/include/c++/10/mipsel-linux-gnu]
+          add: [/usr/lib/gcc-cross/mipsel-linux-gnu/10/../../../../mipsel-linux-gnu/include/c++/10/backward]
+          add: [/usr/lib/gcc-cross/mipsel-linux-gnu/10/include]
+          add: [/usr/lib/gcc-cross/mipsel-linux-gnu/10/../../../../mipsel-linux-gnu/include]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/lib/gcc-cross/mipsel-linux-gnu/10/../../../../mipsel-linux-gnu/include/c++/10] ==> [/usr/mipsel-linux-gnu/include/c++/10]
+        collapse include dir [/usr/lib/gcc-cross/mipsel-linux-gnu/10/../../../../mipsel-linux-gnu/include/c++/10/mipsel-linux-gnu] ==> [/usr/mipsel-linux-gnu/include/c++/10/mipsel-linux-gnu]
+        collapse include dir [/usr/lib/gcc-cross/mipsel-linux-gnu/10/../../../../mipsel-linux-gnu/include/c++/10/backward] ==> [/usr/mipsel-linux-gnu/include/c++/10/backward]
+        collapse include dir [/usr/lib/gcc-cross/mipsel-linux-gnu/10/include] ==> [/usr/lib/gcc-cross/mipsel-linux-gnu/10/include]
+        collapse include dir [/usr/lib/gcc-cross/mipsel-linux-gnu/10/../../../../mipsel-linux-gnu/include] ==> [/usr/mipsel-linux-gnu/include]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/mipsel-linux-gnu/include/c++/10;/usr/mipsel-linux-gnu/include/c++/10/mipsel-linux-gnu;/usr/mipsel-linux-gnu/include/c++/10/backward;/usr/lib/gcc-cross/mipsel-linux-gnu/10/include;/usr/mipsel-linux-gnu/include;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/baker/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake:170 (message)"
+      - "/home/baker/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:24 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
+        ignore line: [Change Dir: '/home/baker/Code/PSX/Projects/build/CMakeFiles/CMakeScratch/TryCompile-c25cxw']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/ninja -v cmTC_1c199]
+        ignore line: [[1/2] /bin/mipsel-linux-gnu-g++   -v -g -Wall -Wa --strip-local-absolute -ffreestanding -fno-builtin -fno-pic -nostdlib -fdata-sections -ffunction-sections -fsigned-char -fno-strict-overflow -march=r3000 -mabi=32 -mfp32 -mno-mt -mno-llsc -mno-abicalls -mgpopt -mno-extern-sdata -G8 -fno-exceptions -fno-rtti -fno-unwind-tables -fno-threadsafe-statics -fno-use-cxa-atexit -mno-check-zero-division -o CMakeFiles/cmTC_1c199.dir/CMakeCXXCompilerABI.cpp.obj -c /home/baker/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_AS_OPTIONS='--strip-local-absolute']
+        ignore line: [COLLECT_GCC=/bin/mipsel-linux-gnu-g++]
+        ignore line: [Target: mipsel-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 10.3.0-1ubuntu1' --with-bugurl=file:///usr/share/doc/gcc-10/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-10 --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-libitm --disable-libsanitizer --disable-libquadmath --disable-libquadmath-support --enable-plugin --with-system-zlib --enable-libphobos-checking=release --without-target-system-zlib --enable-multiarch --disable-werror --enable-multilib --with-arch-32=mips32r2 --with-fp-32=xx --with-madd4=no --with-lxc1-sxc1=no --enable-targets=all --with-arch-64=mips64r2 --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=mipsel-linux-gnu --program-prefix=mipsel-linux-gnu- --includedir=/usr/mipsel-linux-gnu/include --with-build-config=bootstrap-lto-lean --enable-link-mutex]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 10.3.0 (Ubuntu 10.3.0-1ubuntu1) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-g' '-Wall' '-ffreestanding' '-fno-builtin' '-fno-pic' '-nostdlib' '-fdata-sections' '-ffunction-sections' '-fsigned-char' '-fno-strict-overflow' '-march=r3000' '-mabi=32' '-mfp32' '-mno-mt' '-mno-llsc' '-mno-abicalls' '-mgpopt' '-mno-extern-sdata' '-G' '8' '-fno-exceptions' '-fno-rtti' '-fno-unwind-tables' '-fno-threadsafe-statics' '-fno-use-cxa-atexit' '-mno-check-zero-division' '-o' 'CMakeFiles/cmTC_1c199.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mno-lxc1-sxc1' '-mno-madd4' '-mips1' '-mno-shared' '-EL']
+        ignore line: [ /usr/lib/gcc-cross/mipsel-linux-gnu/10/cc1plus -quiet -v -imultiarch mipsel-linux-gnu -D_GNU_SOURCE /home/baker/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/CMakeCXXCompilerABI.cpp -G 8 -mel -quiet -dumpbase CMakeCXXCompilerABI.cpp -march=r3000 -mabi=32 -mfp32 -mno-mt -mno-llsc -mno-abicalls -mgpopt -mno-extern-sdata -mno-check-zero-division -mno-lxc1-sxc1 -mno-madd4 -mips1 -mno-shared -auxbase-strip CMakeFiles/cmTC_1c199.dir/CMakeCXXCompilerABI.cpp.obj -g -Wall -version -ffreestanding -fno-builtin -fno-pic -fdata-sections -ffunction-sections -fsigned-char -fno-strict-overflow -fno-exceptions -fno-rtti -fno-unwind-tables -fno-threadsafe-statics -fno-use-cxa-atexit -Wformat-security -o /tmp/cchALriQ.s]
+        ignore line: [GNU C++14 (Ubuntu 10.3.0-1ubuntu1) version 10.3.0 (mipsel-linux-gnu)]
+        ignore line: [	compiled by GNU C version 10.3.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.0  isl version isl-0.24-GMP]
+        ignore line: []
+        ignore line: [warning: MPC header version 1.2.0 differs from library version 1.2.1.]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/usr/local/include/mipsel-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc-cross/mipsel-linux-gnu/10/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/usr/include/mipsel-linux-gnu"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/lib/gcc-cross/mipsel-linux-gnu/10/../../../../mipsel-linux-gnu/include/c++/10]
+        ignore line: [ /usr/lib/gcc-cross/mipsel-linux-gnu/10/../../../../mipsel-linux-gnu/include/c++/10/mipsel-linux-gnu]
+        ignore line: [ /usr/lib/gcc-cross/mipsel-linux-gnu/10/../../../../mipsel-linux-gnu/include/c++/10/backward]
+        ignore line: [ /usr/lib/gcc-cross/mipsel-linux-gnu/10/include]
+        ignore line: [ /usr/lib/gcc-cross/mipsel-linux-gnu/10/../../../../mipsel-linux-gnu/include]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [GNU C++14 (Ubuntu 10.3.0-1ubuntu1) version 10.3.0 (mipsel-linux-gnu)]
+        ignore line: [	compiled by GNU C version 10.3.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.0  isl version isl-0.24-GMP]
+        ignore line: []
+        ignore line: [warning: MPC header version 1.2.0 differs from library version 1.2.1.]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [Compiler executable checksum: 88ddce81f0e621d7f1c38a038151f445]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-g' '-Wall' '-ffreestanding' '-fno-builtin' '-fno-pic' '-nostdlib' '-fdata-sections' '-ffunction-sections' '-fsigned-char' '-fno-strict-overflow' '-march=r3000' '-mabi=32' '-mfp32' '-mno-mt' '-mno-llsc' '-mno-abicalls' '-mgpopt' '-mno-extern-sdata' '-G' '8' '-fno-exceptions' '-fno-rtti' '-fno-unwind-tables' '-fno-threadsafe-statics' '-fno-use-cxa-atexit' '-mno-check-zero-division' '-o' 'CMakeFiles/cmTC_1c199.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mno-lxc1-sxc1' '-mno-madd4' '-mips1' '-mno-shared' '-EL']
+        ignore line: [ /usr/lib/gcc-cross/mipsel-linux-gnu/10/../../../../mipsel-linux-gnu/bin/as -v -G 8 -EL -mips1 -mno-mt -O1 -g -mabi=32 -march=r3000 -mfp32 -mno-shared --strip-local-absolute -o CMakeFiles/cmTC_1c199.dir/CMakeCXXCompilerABI.cpp.obj /tmp/cchALriQ.s]
+        ignore line: [GNU assembler version 2.38 (mipsel-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.38]
+        ignore line: [COMPILER_PATH=/usr/lib/gcc-cross/mipsel-linux-gnu/10/:/usr/lib/gcc-cross/mipsel-linux-gnu/10/:/usr/lib/gcc-cross/mipsel-linux-gnu/:/usr/lib/gcc-cross/mipsel-linux-gnu/10/:/usr/lib/gcc-cross/mipsel-linux-gnu/:/usr/lib/gcc-cross/mipsel-linux-gnu/10/../../../../mipsel-linux-gnu/bin/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc-cross/mipsel-linux-gnu/10/:/usr/lib/gcc-cross/mipsel-linux-gnu/10/../../../../mipsel-linux-gnu/lib/../lib/:/lib/mipsel-linux-gnu/:/lib/../lib/:/usr/lib/mipsel-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc-cross/mipsel-linux-gnu/10/../../../../mipsel-linux-gnu/lib/:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-g' '-Wall' '-ffreestanding' '-fno-builtin' '-fno-pic' '-nostdlib' '-fdata-sections' '-ffunction-sections' '-fsigned-char' '-fno-strict-overflow' '-march=r3000' '-mabi=32' '-mfp32' '-mno-mt' '-mno-llsc' '-mno-abicalls' '-mgpopt' '-mno-extern-sdata' '-G' '8' '-fno-exceptions' '-fno-rtti' '-fno-unwind-tables' '-fno-threadsafe-statics' '-fno-use-cxa-atexit' '-mno-check-zero-division' '-o' 'CMakeFiles/cmTC_1c199.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mno-lxc1-sxc1' '-mno-madd4' '-mips1' '-mno-shared' '-EL']
+        ignore line: [[2/2] : && /home/baker/.local/lib/python3.10/site-packages/cmake/data/bin/cmake -E rm -f libcmTC_1c199.a && /bin/mipsel-linux-gnu-ar qc libcmTC_1c199.a  CMakeFiles/cmTC_1c199.dir/CMakeCXXCompilerABI.cpp.obj && /bin/mipsel-linux-gnu-ranlib libcmTC_1c199.a && :]
+        ignore line: []
+        ignore line: []
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+...
