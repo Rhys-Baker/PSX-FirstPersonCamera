@@ -9,4 +9,4 @@ The discord can be found at: https://discord.gg/psx-dev-642647820683444236
 
 # Screenshots
 ![image](https://github.com/Rhys-Baker/PSX-FirstPersonCamera/assets/86057194/befe8181-7187-40a5-8599-da3d58343dd4)
-![image](https://github.com/Rhys-Baker/PSX-FirstPersonCamera/assets/86057194/2b070783-5bca-43db-8cf6-527fa1d8595d)
+![image](https://github.com/Rhys-Baker/PSX-FirstPersonCamera/assets/86057194/fd6d8794-d925-4155-a084-4ad4a40c2190)
