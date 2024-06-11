@@ -1,4 +1,0 @@
-/home/baker/Code/PSX/Projects/build/CMakeFiles/common.dir
-/home/baker/Code/PSX/Projects/build/CMakeFiles/FirstPersonCamera.dir
-/home/baker/Code/PSX/Projects/build/CMakeFiles/edit_cache.dir
-/home/baker/Code/PSX/Projects/build/CMakeFiles/rebuild_cache.dir
